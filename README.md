@@ -199,6 +199,15 @@ SCP, so deployment is performed locally with `--profile temp-account` via `scrip
 > The DynamoDB table and the pepper secret use `RemovalPolicy.DESTROY` so the temp account
 > cleans up fully. For real production, switch these to `RETAIN`.
 
+## Documentation
+
+- [`docs/SES_SETUP.md`](docs/SES_SETUP.md) — full guide to enabling SES on a new AWS account:
+  identity/domain verification, DKIM/SPF/DMARC, the sandbox, production access, bounce &
+  delivery troubleshooting, monitoring (English).
+- [`docs/SES_SETUP_zh.md`](docs/SES_SETUP_zh.md) — 上述指南的中文版。
+- [`docs/SOLUTION.md`](docs/SOLUTION.md) — solution architecture, sequence diagrams, security & data model.
+- `docs/architecture_diagram.py` — regenerates the AWS-icon architecture image.
+
 ## Project layout
 
 ```
