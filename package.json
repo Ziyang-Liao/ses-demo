@@ -1,0 +1,47 @@
+{
+  "name": "ses-otp-service",
+  "version": "1.0.0",
+  "description": "Production-grade email OTP (verification code) service on AWS SES, API Gateway, Lambda and DynamoDB",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ziyang-Liao/ses-demo.git"
+  },
+  "bin": {
+    "ses-otp-service": "bin/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "e2e": "ts-node test/e2e/smoke.ts"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^2.10.0",
+    "@aws-sdk/client-dynamodb": "^3.682.0",
+    "@aws-sdk/client-secrets-manager": "^3.682.0",
+    "@aws-sdk/client-sesv2": "^3.682.0",
+    "@aws-sdk/lib-dynamodb": "^3.682.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^20.16.5",
+    "aws-cdk": "^2.1128.1",
+    "aws-cdk-lib": "^2.160.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.24.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

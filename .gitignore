@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build / compile output
+dist/
+*.js
+*.d.ts
+!jest.config.js
+
+# CDK
+cdk.out/
+cdk.context.json
+.cdk.staging/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment & local config (NEVER commit secrets or per-developer config)
+.env
+.env.*
+*.local
+.env.deploy
+
+# AWS credentials — must never enter the repo
+.aws/
+credentials
+*.pem
+aws-exports.js
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
